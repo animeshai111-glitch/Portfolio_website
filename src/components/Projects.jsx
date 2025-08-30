@@ -17,12 +17,7 @@ const Projects = () => {
             <p>Improved claim handling in SAP MM-Ariba integration for ArcelorMittal, reducing downtime and errors.</p>
           </div>
         </div>
-        <div className="col-md-6">
-          <div className="card p-3 shadow-sm mb-3">
-            <h5>Claim Management Optimization</h5>
-            <p>Improved claim handling in SAP MM-Ariba integration for ArcelorMittal, reducing downtime and errors.</p>
-          </div>
-        </div>
+        
       </div>
     </section>
   );

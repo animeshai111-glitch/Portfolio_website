@@ -1,0 +1,9 @@
+# This file tells Netlify the correct build settings for a Vite project.
+[build]
+  command = "npm run build"
+  publish = "dist"
+
+# This tells Netlify how to run your local dev server (good practice)
+[dev]
+  command = "npm run dev"
+  port = 5173 

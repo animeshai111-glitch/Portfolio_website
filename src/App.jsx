@@ -1,37 +1,30 @@
-import Hero from "./components/Hero.jsx";
-import About from "./components/About.jsx";
-import Skills from "./components/Skills.jsx";
-import Experience from "./components/Experience.jsx";
-import Projects from "./components/Projects.jsx";
-import Contact from "./components/Contact.jsx";
-import { ToastProvider } from "./components/Toast.jsx";
+import React from 'react';
+import './App.css'; // For the global styles
 
-export default function App() {
+import Navbar from './components/Navbar';
+import Hero from './components/Hero';
+import About from './components/About';
+import Skills from './components/Skills';
+import Experience from './components/Experience';
+import Projects from './components/Projects';
+import Education from './components/Education';
+import Contact from './components/Contact';
+import Footer from './components/Footer';
+
+function App() {
   return (
-    <ToastProvider>
-      <header className="site-header">
-        <a href="#" className="brand">Animesh Kumar</a>
-        <nav className="nav">
-          <a href="#about">About</a>
-          <a href="#skills">Skills</a>
-          <a href="#experience">Experience</a>
-          <a href="#projects">Projects</a>
-          <a href="#contact" className="btn">Contact</a>
-        </nav>
-      </header>
-
-      <main>
-        <Hero />
-        <About />
-        <Skills />
-        <Experience />
-        <Projects />
-        <Contact />
-      </main>
-
-      <footer className="footer">
-        © 2025 Animesh Kumar | Built with AI-powered tools
-      </footer>
-    </ToastProvider>
+    <div className="App">
+      <Navbar />
+      <Hero />
+      <About />
+      <Skills />
+      <Experience />
+      <Projects />
+      <Education />
+      <Contact />
+      <Footer />
+    </div>
   );
 }
+
+export default App;

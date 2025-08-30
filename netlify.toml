@@ -1,0 +1,16 @@
+# This file tells Netlify how to build your project.
+
+[build]
+  # This confirms your build command.
+  command = "npm run build"
+  
+  # This confirms your publish directory for a Vite project.
+  publish = "dist"
+
+# This section explicitly controls Netlify plugins.
+[[plugins]]
+  # We are targeting the Next.js plugin that Netlify is auto-enabling.
+  package = "@netlify/plugin-nextjs"
+  
+  # This is the most important line: it disables the plugin.
+  disabled = true
